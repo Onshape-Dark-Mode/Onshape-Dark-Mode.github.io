@@ -6,6 +6,48 @@
     <title>Onshape Dark Mode - Unleash the Power of Design</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 960px; /* Optional: Adjust based on your design */
+            padding: 20px;
+        }
+
+        .video,
+        .faq {
+            width: 100%;
+            max-width: 960px; /* Optional: Adjust based on your design */
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+        }
+
+        .video iframe {
+            width: 100%; /* Make the iframe responsive */
+            max-width: 800px; /* Set a max-width to prevent it from stretching too wide */
+            height: 450px; /* Set a fixed height */
+        }
+
+        @media screen and (max-width: 600px) {
+            .centered-content {
+                padding: 10px;
+            }
+
+            .video,
+            .faq {
+                padding: 10px;
+            }
+
+            .video iframe {
+                height: 250px; /* Adjust height for smaller screens */
+            }
+        }
+    </style>
 </head>
 <body class="dark-theme">
     <header>
@@ -26,6 +68,12 @@
             <a href="https://chromewebstore.google.com/detail/onshape-dark-mode/popodjamjhdfcimmilnnpehhfkjbjoba?hl=en&authuser=0" class="button">Download Now</a>
         </div>
     </section>
+    <div class="centered-content">
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oQN-1Mvg6hU?si=FPWv5LHUo7AYFG8G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+    </div>
+
     <section class="features" id="features">
         <div class="feature">
             <h2>Dark Mode</h2>
@@ -44,21 +92,23 @@
         <h2>Get Onshape Dark Mode Now</h2>
         <a href="https://chromewebstore.google.com/detail/onshape-dark-mode/popodjamjhdfcimmilnnpehhfkjbjoba?hl=en&authuser=0" target="_blank" class="button">Download from Chrome Web Store</a>
     </section>
-    <section class="faq">
-        <h2>FAQ</h2>
-        <div class="question">
-            <h3>How do I install Onshape Dark Mode?</h3>
-            <p>Simply visit the Chrome Web Store and click on "Add to Chrome".</p>
-        </div>
-        <div class="question">
-            <h3>Is Onshape Dark Mode free to use?</h3>
-            <p>Yes, Onshape Dark Mode is free to download and includes a 7 day trail. Full version is $3.99</p>
-        </div>
-        <div class="question">
-            <h3>Can I customize the colors in Onshape Dark Mode?</h3>
-            <p>Yes, you can use the custom color picker to create your unique design environment.</p>
-        </div>
-    </section>
+    <div class="centered-content">
+        <section class="faq">
+            <h2>FAQ</h2>
+            <div class="question">
+                <h3>How do I install Onshape Dark Mode?</h3>
+                <p>Simply visit the Chrome Web Store and click on "Add to Chrome".</p>
+            </div>
+            <div class="question">
+                <h3>Is Onshape Dark Mode free to use?</h3>
+                <p>Yes, Onshape Dark Mode is free to download and includes a 7-day trial. Full version is $2.99.</p>
+            </div>
+            <div class="question">
+                <h3>Can I customize the colors in Onshape Dark Mode?</h3>
+                <p>Yes, you can use the custom color picker to create your unique design environment.</p>
+            </div>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2024 Onshape Dark Mode | Made with ❤️</p>
     </footer>
