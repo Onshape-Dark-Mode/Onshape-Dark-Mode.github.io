@@ -118,3 +118,29 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+
+.image-gallery {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-image {
+    max-width: 48%; /* Adjust for side-by-side layout */
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .gallery-image {
+        max-width: 100%; /* Stacked layout on mobile */
+    }
+}
